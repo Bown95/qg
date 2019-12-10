@@ -1,0 +1,12 @@
+<view>
+  <view>
+    <image src='/images/myapp/main_head_bg.png' class='head'></image>
+  </view>
+  <view class='applist'>
+    <view wx:for="{{applist}}" wx:for-item="app" wx:key="index" class='flex-column appitem' bindtap='app_click' data-item="{{app}}">
+      <image src='{{app.image}}' class='appimage'></image>
+      <text class='font14 mgtop20 app_name'>{{app.name}}</text>
+    </view>
+  </view>
+
+</view>

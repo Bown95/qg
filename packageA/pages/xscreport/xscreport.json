@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "测评报告",
+  "usingComponents": {
+    "ff-canvas": "@antv/f2-canvas"
+  }
+}

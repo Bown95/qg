@@ -1,0 +1,149 @@
+.xsc_bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: -1;
+}
+
+.xsc_bg image {
+  width: 100%;
+  height: 100%;
+}
+
+.xsc_nodata {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.xsc_nodata image {
+  width: 359rpx;
+  height: 384rpx;
+}
+
+.xsc_front {
+  position: relative;
+  width: 100%;
+  min-height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.xsc_front .list {
+  width: 700rpx;
+}
+
+.xsc_front .list .item {
+  width: 700rpx;
+  height: 160rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  box-shadow: 0px 0px 26rpx 0px rgba(24, 24, 24, 0.08);
+  border-radius: 16rpx;
+  display: flex;
+}
+
+.xsc_front .list .item .left {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 16rpx;
+}
+
+.xsc_front .list .item .left .top {
+  flex-grow: 1;
+  margin-top: 16rpx;
+  font-size: 38rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(55, 56, 57, 1);
+}
+
+.xsc_front .list .item .left .bottom {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.xsc_front .list .item .left .bottom image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.xsc_front .list .item .left .bottom text {
+  margin-left: 10rpx;
+  font-size: 26rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.xsc_front .list .item .right {
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xsc_front .list .item .right .reportbutton {
+  width: 195rpx;
+  height: 52rpx;
+  margin-right: 16rpx;
+  background: rgba(222, 229, 245, 1);
+  border: 1rpx solid rgba(230, 230, 230, 1);
+  box-shadow: 0px 2rpx 20rpx 1rpx rgba(42, 126, 251, 0.19);
+  border-radius: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.xsc_front .list .item .right .reportbutton image {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.xsc_front .list .item .right .reportbutton text {
+  width: 105rpx;
+  font-size: 26rpx;
+  margin-left: 8rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(42, 126, 251, 1);
+}
+
+.xsc_front .list .item .right .paybutton {
+  width: 195rpx;
+  height: 52rpx;
+  margin-right: 16rpx;
+  background: rgba(253, 125, 106, 1);
+  border: 1rpx solid rgba(253, 125, 106, 1);
+  box-shadow: 0rpx 2rpx 20rpx 1rpx rgba(253, 125, 106, 0.2);
+  border-radius: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.xsc_front .list .item .right .paybutton image {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.xsc_front .list .item .right .paybutton text {
+  width: 105rpx;
+  font-size: 26rpx;
+  margin-left: 8rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}

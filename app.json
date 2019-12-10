@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myapp/myapp",
+    "pages/me/me",
+    "pages/paysuccess/paysuccess",
+    "pages/income/income",
+    "pages/share/share",
+    "pages/phone/phone",
+    "pages/tixian/tixian"
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/xsc/xsc",
+        "pages/xsctest/xsctest",
+        "pages/xsctestdetail/xsctestdetail",
+        "pages/xscpay/xscpay",
+        "pages/xscpayorder/xscpayorder",
+        "pages/xscpaysuccess/xscpaysuccess",
+        "pages/xscreport/xscreport",
+        "pages/xschistory/xschistory"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "青鸽易学",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "主页",
+        "iconPath": "images/tabbar/main_home_black.png",
+        "selectedIconPath": "images/tabbar/main_home_blue.png",
+        "pagePath": "pages/myapp/myapp"
+      },
+      {
+        "text": "我",
+        "iconPath": "images/tabbar/main_me_black.png",
+        "selectedIconPath": "images/tabbar/main_me_blue.png",
+        "pagePath": "pages/me/me"
+      }
+    ],
+    "custom": false,
+    "color": "#7A7E83",
+    "selectedColor": "#2A7EFB",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

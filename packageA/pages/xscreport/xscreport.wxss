@@ -1,0 +1,208 @@
+.report {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #4d9dff;
+}
+
+.head {
+  position: relative;
+  height: 364rpx;
+  width: 100%;
+}
+
+.papername {
+  position: absolute;
+  height: 40rpx;
+  width: 100%;
+  top: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.papername text {
+  font-size: 50rpx;
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+}
+
+.head image {
+  width: 100%;
+  height: 100%;
+}
+
+.xsc_front {
+  position: relative;
+  width: 100%;
+  height: 700rpx;
+  background-color: #4d9dff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.radarview {
+  position: relative;
+  z-index: 1;
+  width: 680rpx;
+  height: 680rpx;
+  background-color: #4d9dff;
+}
+
+.xsc_front .radar_outer {
+  position: relative;
+  width: 684rpx;
+  height: 684rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+}
+
+.bottom {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d9dff;
+  padding-bottom: 40rpx;
+}
+
+.bottom .bottom_inner {
+  position: relative;
+  width: 684rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+  padding-bottom: 40rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom_inner .type_view {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom_inner .title_txt {
+  font-size: 36rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: rgba(42, 126, 251, 1);
+  margin-left: 14rpx;
+}
+
+.left_blue {
+  width: 14rpx;
+  height: 46rpx;
+  background: rgba(42, 126, 251, 1);
+}
+
+.pj {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  align-items: flex-start;
+}
+
+.pj_left {
+  width: 76rpx;
+  font-size: 24rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: rgba(42, 126, 251, 1);
+  margin-left: 30rpx;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  line-height: 40rpx;
+}
+
+.pj_right {
+  font-size: 24rpx;
+  font-family: MicrosoftYaHei;
+  margin-right: 20rpx;
+  font-weight: bold;
+  color: #5f5f5f;
+  flex-shrink: 1;
+  line-height: 40rpx;
+}
+
+.pj2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.pj2 .pj2_item {
+  display: flex;
+  height: 50rpx;
+}
+
+.pj2_txt {
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: rgba(254, 135, 0, 1);
+}
+
+.bottom .showdetail {
+  position: relative;
+  width: 684rpx;
+  height: 152rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.showdetail .left {
+  margin-left: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.showdetail .mid {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+
+.showdetail .mid .top2 {
+  font-size: 36rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+}
+
+.showdetail .mid .bottom2 {
+  font-size: 26rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(143, 143, 143, 1);
+}
+
+.showdetail .right {
+  width: 116rpx;
+  height: 48rpx;
+  background: rgba(248, 225, 207, 1);
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30rpx;
+}
+
+.showdetail .right text {
+  font-size: 28rpx;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: rgba(254, 107, 1, 1);
+}

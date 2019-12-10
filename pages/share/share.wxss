@@ -1,0 +1,50 @@
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(93, 190, 253, 1);
+  z-index: -1;
+}
+
+.front {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(93, 190, 253, 1);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  height: 1100rpx;
+}
+
+.shareCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+.front .bottom {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front .bottom .bt_button {
+  width: 528rpx;
+  height: 85rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 43rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front .bottom .bt_button text {
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(93, 190, 253, 1);
+}

@@ -1,0 +1,24 @@
+<view class='xsc_bg'>
+  <image src='../../images/xsctest/xsctest_bg.png'></image>
+</view>
+
+<view class='xsc_front'>
+  <view class='report'>
+    <image class='bg' src='../../images/xscpay/xscpay_report_bg.png'></image>
+
+    <view class='report_front'>
+      <view class='titleitem'>
+        <text>{{papername}}</text>
+      </view>
+      <view class='item'>
+        <image src='../../images/xscpay/xscpay_student.png'></image>
+        <text>{{userInfo.nickName}}</text>
+      </view>
+      <view class='item'>
+        <image src='../../images/xscpay/xscpay_time.png'></image>
+        <text>{{timeStr}}</text>
+      </view>
+    </view>
+  </view>
+  <button type='primary' class='payshow' bindtap='payshow'>查看报告</button>
+</view>

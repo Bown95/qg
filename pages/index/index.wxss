@@ -1,0 +1,111 @@
+.container {
+  position: fixed;
+  z-index: 1;
+}
+
+.head {
+  margin-top: 76rpx;
+}
+
+.head image {
+  width: 750rpx;
+  height: 722rpx;
+}
+
+.start_use {
+  margin-bottom: 260rpx;
+}
+
+.start_button {
+  width: 400rpx;
+  height: 80rpx;
+  margin-right: 16rpx;
+  background: rgba(42, 126, 251, 1);
+  border: 1rpx solid rgba(230, 230, 230, 1);
+  box-shadow: 0px 2rpx 20rpx 1rpx rgba(42, 126, 251, 0.19);
+  border-radius: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+/* 协议同意页面 */
+.xy_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.xy_front {
+  width: 700rpx;
+  height: 939rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.xy_title {
+  margin-top: 54rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.xy_title text {
+  font-size: 36rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+}
+
+.xy_content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.xy_content text {
+  font-size: 26rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 66rpx;
+}
+
+.xy_button {
+  width: 528rpx;
+  height: 85rpx;
+  background: rgba(42, 126, 251, 1);
+  border-radius: 43rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 54rpx;
+  margin-top: 20rpx;
+  flex-shrink: 0;
+}
+
+.xy_button text {
+  font-size: 32rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}

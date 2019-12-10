@@ -1,0 +1,28 @@
+<view class='xsc_bg'>
+  <image src='../../images/xsc/xsc_bg.png'></image>
+</view>
+<view>
+
+  <view>
+
+    <view class='flex-row head'>
+      <view class='blue_block'></view>
+      <text>综合测评说明</text>
+    </view>
+    <view class='card_bg'>
+      <view>
+        测评时间：20分钟 题量：20道
+      </view>
+      <view>根据学生守则及行为规范，本系统重点评估学生的核心素养，如社会关系、道德品质、逻辑能力、人文底蕴、科学创新、个性情感、学习方法、学习动机、信息应用、健康生活10项学生素养，能够精准评价学生综合素养。同时，为学生提供精细的评价和建议，为学生素养提升指明方向。
+      </view>
+      <view wx:if="{{paynum>0}}">
+        <text class='freeview'>您还有{{paynum}}次免费体验机会,快来测测吧！</text>
+      </view>
+
+      <button type='primary' class='bg_blue' bindtap='begin_test'>
+        开始测评
+      </button>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,83 @@
+<view class='xsc_bg'>
+  <image src='../../images/xsctest/xsctest_bg.png'></image>
+</view>
+
+<!-- 试题列表 -->
+<view class='xsc_front {{isshowcard?"view_hide":"view_show"}}'>
+  <view class='flex-row head'>
+    <view class='blue_block'></view>
+    <text class='title'>共{{queslist.length}}题 {{curr+1}}/{{queslist.length}}</text>
+    <view bindtap="ans_sheet_click">
+      <image src='../../images/xsctest/xsctest_answer_sheet.png' class='ans_sheet'></image>
+    </view>
+  </view>
+  <view class='card_bg'>
+    <view>
+      <rich-text nodes="{{curr_ques.questionstem}}"></rich-text>
+    </view>
+    <view>
+      <view wx:for="{{curr_ques.options}}" wx:for-item="opt" wx:key="index" class='flex-row opt {{chararr[index]==curr_ques.select_opt?"checked":""}}' data-select_opt="{{chararr[index]}}">
+        <view class='opt_num'>
+          <text>{{chararr[index]}}</text>
+        </view>
+        <view class='line_shu'></view>
+        <view class='opt_content'>
+          <rich-text nodes="{{opt.optiontxt}}"></rich-text>
+        </view>
+      </view>
+    </view>
+
+    <view class='best_ans'>
+      <image src='../../images/xsctestdetail/best.png'></image>
+      <text class='text1'>最佳选项：</text>
+      <text class='text2'>{{curr_ques.highoption||""}}</text>
+    </view>
+  </view>
+
+  <view class='xsc_bottom'>
+    <view class="bottom_botton1 {{curr==0?'first':''}} bottom_botton" bindtap='last_ques_click'>
+      <view class='bottom_botton1_bg {{curr==0?"first":""}}'>
+        <image src='../../images/xsctest/xsctest_previous_question.png'></image>
+      </view>
+      <text>上一题</text>
+    </view>
+    <view class="bottom_botton2 bottom_botton" bindtap='next_ques_click' wx:if="{{curr < queslist.length-1}}">
+      <view class='bottom_botton2_bg'>
+        <image src='../../images/xsctest/xsctest_next_question.png'></image>
+      </view>
+      <text>下一题</text>
+    </view>
+
+    <view class="bottom_botton2 bottom_botton" bindtap='submit_ques_click' wx:elif="{{curr == queslist.length-1}}">
+      <view class='bottom_botton2_bg'>
+        <image src='../../images/xsctest/xsctest_submit.png'></image>
+      </view>
+      <text>答题卡</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- 试题卡片 -->
+<view class='xsc_front {{isshowcard?"view_show":"view_hide"}}'>
+  <view class='flex-row head'>
+    <view class='blue_block'></view>
+    <text class='title'>作答情况 共{{queslist.length}}题</text>
+    <view class='zuoda1'></view>
+    <text class='zuoda_txt'>作答准确</text>
+    <view class='zuoda2'></view>
+    <text class='zuoda_txt'>作答有误</text>
+  </view>
+  <view class='card_bg2'>
+    <view class='flex-row ques_num_list'>
+      <view wx:for="{{queslist}}" wx:for-item="ques" wx:key="index" class='ques_num {{(ques.highoption&&ques.select_opt==ques.highoption)?"selected":"unselected"}}' bindtap='ques_num_click' data-index="{{index}}">
+        <text>{{index+1}}</text>
+      </view>
+    </view>
+    <view class='xsc_bottom2'>
+      <view class="treturn" bindtap='return_click'>
+        <text>返回</text>
+      </view>
+    </view>
+  </view>
+</view>

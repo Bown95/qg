@@ -1,0 +1,118 @@
+.xsc_bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: -1;
+}
+
+.xsc_bg image {
+  width: 100%;
+  height: 100%;
+}
+
+.xsc_front {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.xsc_front .report {
+  position: relative;
+  width: 698rpx;
+  height: 806rpx;
+  margin-top: 48rpx;
+}
+
+.xsc_front .report .bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.xsc_front .report .report_front1 {
+  position: absolute;
+  display: flex;
+  top: 110rpx;
+  width: 100%;
+  height: 76rpx;
+  justify-content: center;
+}
+
+.report_front1 .head {
+  display: flex;
+  align-items: center;
+  width: 280rpx;
+}
+
+.report_front1 .head image {
+  width: 76rpx;
+  height: 76rpx;
+}
+
+.report_front1 .head text {
+  height: 46rpx;
+  font-size: 46rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  margin-left: 16rpx;
+  color: rgba(59, 143, 244, 1);
+  line-height: 46rpx;
+}
+
+.xsc_front .report .report_front2 {
+  position: absolute;
+  top: 240rpx;
+  width: 594rpx;
+  left: 50rpx;
+  height: 190rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.report_front2 text {
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.report_front2 .text_item {
+  display: flex;
+  flex-direction: row;
+}
+
+.report_front2 text.left {
+}
+
+.report_front2 text.right {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.xsc_front .report .report_front3 {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 1;
+  bottom: 110rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 96rpx;
+  padding-right: 96rpx;
+}
+
+.payshow {
+  width: 528rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  background: rgba(42, 126, 251, 1) !important;
+  border-radius: 43px;
+  color: white;
+}

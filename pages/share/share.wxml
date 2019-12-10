@@ -1,0 +1,14 @@
+<view class='bg'></view>
+
+<view class='front' bindtap='saveqrcode'>
+  <view class='head'>
+  <canvas canvas-id="shareCanvas" id='shareCanvas' class='shareCanvas'></canvas>
+</view>
+
+  <view class='bottom'>
+    <view class='bt_button' bindtap='downloadImg'>
+      <text>微信分享</text>
+    </view>
+  </view>
+</view>
+

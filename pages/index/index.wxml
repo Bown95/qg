@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="head">
+    <image src='/images/login/login_bg.png'></image>
+  </view>
+  <view class="start_use">
+    <button class='start_button' open-type="getUserInfo" bindgetuserinfo="getUserInfo">开始使用</button>
+  </view>
+</view>
+
+<view class='xy_bg' wx:if="{{!isagree}}">
+  <view class='xy_front'>
+    <view class='xy_title'>
+      <text>青鸽易学使用须知</text>
+    </view>
+    <view class='xy_content'>
+      <text>1.	用户A成功邀请好友B，B查看报告后，用户A收到成长值1元，成长值将即刻到A的收益账户，可在收益历史中进行查看。
+2.	成长值满额度20元后可以直接提现，提现金额于7个工作日内到达您的账户。
+3.	成长值可以选择是否付费抵现，成长值可拆分使用，用户如有满足一次费用的成长值，系统自动扣除一次费用的成长值，不满一次费用仅需补足费用即可。
+4.	活动期间，用户获得的成长值可以进行累加。如凡是通过A的二维码成功邀请的用户，均可提供给A成长值，用户每查看报告一次，A就获得成长值1元，上不封顶。
+5.	因本产品的特殊性质，用户付费成功之后概不退款。
+6.	所有由本合同产生的争议，双方应当友好协商解决。如不能通过友好协商解决争议，任何一方均可将此争议依法提交仲裁机构仲裁。
+7.	本产品的最终解释权归河南星火燎原软件科技有限公司所有，如有疑问，请致电客户专线：0371-586055588</text>
+    </view>
+    <view class='xy_button' bindtap='agree_click'>
+      <text>同意协议</text>
+    </view>
+  </view>
+</view>

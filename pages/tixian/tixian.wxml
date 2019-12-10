@@ -1,0 +1,43 @@
+<view class='xsc_bg'>
+  <image src='../../images/bg.png'></image>
+</view>
+
+<view class='xsc_front'>
+  <view class='phoneview'>
+
+    <view class='title'>
+      <text class='left'>可提现金额:</text>
+      <text class='mid'>{{userxnb/100}}</text>
+      <text class='right'>元</text>
+    </view>
+
+    <view class='jine'>
+      <text class='jine_left'>￥</text>
+      <input placeholder="请输入提现金额" adjust-position="false" type="number" auto-focus class='input_jine' value='{{jine}}' bindinput='jine_input' />
+    </view>
+
+    <view class='item'>
+      <text class='left'>收款方</text>
+      <input placeholder="请输入您的真实姓名" bindinput='name_input' class='input' />
+    </view>
+
+    <view class='item'>
+      <text class='left'>银行卡号</text>
+      <input placeholder="请输入银行卡号" type="number" bindinput='cardnum_input' class='input' />
+    </view>
+
+    <view class='item'>
+      <text class='left'>开户银行</text>
+      <input placeholder="请输入开户行具体网点" bindinput='bankname_input' class='input' />
+    </view>
+
+     <view class='item'>
+      <text class='left'>手机号</text>
+      <input placeholder="请输入您的手机号" bindinput='phone_input' class='input' />
+    </view>
+  </view>
+
+  <view class='submit_button' bindtap='tixian_click'>
+    <text>申请提现</text>
+  </view>
+</view>

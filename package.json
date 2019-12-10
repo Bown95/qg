@@ -1,0 +1,19 @@
+{
+  "name": "sycpmp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@antv/f2-canvas": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.xhkjedu.com/xhkjedu/sycpmp.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

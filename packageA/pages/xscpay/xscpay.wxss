@@ -1,0 +1,87 @@
+.xsc_bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: -1;
+}
+
+.xsc_bg image {
+  width: 100%;
+  height: 100%;
+}
+
+.xsc_front {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.xsc_front .report {
+  position: relative;
+  width: 748rpx;
+  height: 955rpx;
+}
+
+.xsc_front .report .bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.xsc_front .report .report_front {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 1;
+  bottom: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 96rpx;
+  padding-right: 96rpx;
+}
+
+.report_front .item {
+  display: flex;
+  align-items: center;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+}
+
+.report_front .titleitem {
+  display: flex;
+  align-items: center;
+  height: 96rpx;
+}
+
+.report_front .titleitem text {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 36rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+}
+
+.report_front  .item image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.report_front  .item text {
+  margin-left: 10rpx;
+}
+
+.payshow {
+  width: 528rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  background: rgba(42, 126, 251, 1) !important;
+  border-radius: 43px;
+  color: white;
+  margin-top: 96rpx;
+}

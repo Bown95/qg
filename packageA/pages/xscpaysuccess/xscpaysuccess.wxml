@@ -1,0 +1,36 @@
+<view class='xsc_bg'>
+  <image src='../../images/xsctest/xsctest_bg.png'></image>
+</view>
+
+<view class='xsc_front'>
+  <view class='report'>
+    <image class='bg' src='../../images/xscpay/xscpay_paysuccess_bg.png'></image>
+    <view class='report_front1'>
+      <view class='head'>
+        <image src='../../images/xscpay/xscpay_success.png'></image>
+        <text>支付成功</text>
+      </view>
+    </view>
+
+    <view class='report_front2'>
+      <view class='text_item'>
+        <text class='left'>订单编号： </text>
+        <text class='right'>{{payorder}}</text>
+      </view>
+      <view class='text_item'>
+        <text class='left'>支付金额：</text>
+        <text class='right' wx:if="{{paynum==0}}">实付:{{paymoney/100}} (成长值:{{checked==1?canusexnhb/100:0}})</text>
+        <text class='right' wx:else>本次免费</text>
+      </view>
+      <view class='text_item'>
+        <text class='left'>支付时间：</text>
+        <text class='right'>{{timestr}}</text>
+      </view>
+    </view>
+
+    <view class='report_front3'>
+      <button type='primary' class='payshow' bindtap='showreport'>查看报告</button>
+    </view>
+  </view>
+
+</view>

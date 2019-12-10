@@ -1,0 +1,72 @@
+<view class='report'>
+
+</view>
+
+<view class='head'>
+  <image src="../../images/xscreport/head.png"></image>
+</view>
+
+<view class='papername'>
+  <text>{{paperuser.papername}}</text>
+</view>
+
+<view class='xsc_front'>
+  <view class='radar_outer'>
+    <ff-canvas id="radar-dom" canvas-id="radar" opts="{{ opts }}" class='radarview'>
+    </ff-canvas>
+  </view>
+
+</view>
+
+<view class='bottom'>
+  <view class='bottom_inner'>
+    <view class='type_view'>
+      <view class='left_blue'></view>
+      <text class='title_txt'>总评：{{paperuser.usergrade}}</text>
+    </view>
+    <view class='pj'>
+      <text class='pj_left'>评语：</text>
+      <text class='pj_right'>{{paperuser.userresult||""}}</text>
+    </view>
+    <view class='pj'>
+      <text class='pj_left'>建议：</text>
+      <text class='pj_right'>{{paperuser.useradvise||""}}</text>
+    </view>
+  </view>
+
+
+  <view class='bottom_inner' wx:for="{{analyze}}" wx:for-item="pj1" wx:key="index">
+    <view class='type_view'>
+      <view class='left_blue'></view>
+      <text class='title_txt'>{{pj1.qtypename||""}}：{{pj1.usergrade}}</text>
+    </view>
+    <view class='pj2'>
+      <view class='pj2_item' wx:for="{{pj1.lst}}" wx:for-item="pj2" wx:key="index">
+        <text class='pj2_txt'>{{pj2.qtypename}}：({{pj2.qtypepoint}}) {{pj2.usergrade}}</text>
+      </view>
+    </view>
+    <view class='pj'>
+      <text class='pj_left'>评语：</text>
+      <text class='pj_right'>{{pj1.userresult||""}}</text>
+    </view>
+    <view class='pj'>
+      <text class='pj_left'>建议：</text>
+      <text class='pj_right'>{{pj1.useradvise||""}}</text>
+    </view>
+  </view>
+
+
+  <view class='showdetail'>
+    <image class='left' src='../../images/xsctestdetail/leftlogo.png'></image>
+
+    <view class='mid'>
+      <text class='top2'>测评详情</text>
+      <text class='bottom2'>快来点我，回顾本次测评！</text>
+    </view>
+
+    <view class='right' bindtap='show_action'>
+      <text>查看</text>
+    </view>
+  </view>
+
+</view>

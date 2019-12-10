@@ -1,0 +1,44 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.mgtop10 {
+  margin-top: 10rpx;
+}
+
+.mgtop20 {
+  margin-top: 20rpx;
+}
+
+.view_show{
+  visibility: visible;
+}
+
+.view_hide{
+  visibility: hidden;
+}

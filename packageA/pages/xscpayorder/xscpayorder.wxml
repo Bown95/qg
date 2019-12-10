@@ -1,0 +1,29 @@
+<view class='xsc_bg'>
+  <image src='../../images/xsctest/xsctest_bg.png'></image>
+</view>
+
+<view class='xsc_front'>
+  <view class='top'>
+    <text class='title'>{{papername}}</text>
+    <view class='mid'>
+      <text class='time'>{{timestr}}</text>
+      <text class='huaxian' wx:if="{{paynum==0}}">￥29.9</text>
+      <text class='price' wx:if="{{paynum==0}}">￥{{pomoney/100}}</text>
+    </view>
+     <view class='mid' wx:if="{{paynum>0}}">
+      <text class='huaxian'>￥29.9</text>
+      <text class='price'>免费(剩余体验次数：{{paynum}}次)</text>
+    </view>
+    <view class='money' wx:if="{{paynum==0}}">
+      <text>成长值 共{{userxnhb/100}}，可抵{{canusexnhb/100}}元</text>
+      <image  wx:if="{{checked==0}}" src='../../images/xscpayorder/check.png' bindtap='check_click'></image>
+      <image  wx:else src='../../images/xscpayorder/checked.png' bindtap='check_click'></image>
+    </view>
+  </view>
+
+  <view class='realmoney' wx:if="{{paynum==0}}">
+    <text class='left'>支付金额</text>
+    <text class='right'>{{paymoney/100}}元</text>
+  </view>
+  <button type='primary' class='payshow' bindtap='payshow'>{{paynum==0?"支付查看":"立即查看"}}</button>
+</view>

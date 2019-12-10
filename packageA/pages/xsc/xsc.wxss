@@ -1,0 +1,72 @@
+.xsc_bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: -1;
+}
+
+.xsc_bg image {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  padding-left: 30rpx;
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  align-items: center;
+}
+
+.head text {
+  margin-left: 10rpx;
+  font-size: 16px;
+}
+
+.freeview {
+  color: rgba(237, 57, 56, 1);
+}
+
+.blue_block {
+  width: 10rpx;
+  height: 32rpx;
+  background: rgba(42, 126, 251, 1);
+}
+
+.card_bg {
+  box-sizing: border-box;
+  position: fixed;
+  width: 684rpx;
+  height: 857rpx;
+  left: 33rpx;
+  background-color: white;
+  border-radius: 8rpx;
+  margin-top: 0rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+
+.card_bg view {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 63rpx;
+  margin-top: 20rpx;
+}
+
+.bg_blue {
+  position: absolute;
+  line-height: 86rpx;
+  text-align: center;
+  width: 528rpx;
+  height: 86rpx;
+  background: rgba(42, 126, 251, 1) !important;
+  border-radius: 43rpx;
+  margin-left: 37rpx;
+  bottom: 100rpx;
+}
+
+.padding20 {
+  padding: 20px;
+}

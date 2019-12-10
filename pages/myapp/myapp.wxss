@@ -1,0 +1,34 @@
+.applist {
+  /* display: flex;
+  flex-direction: row; */
+  margin-top: 10rpx;
+}
+
+.applist .appitem {
+  width: 250rpx;
+  height: 280rpx;
+  align-items: center;
+  float: left;
+}
+
+.applist .appimage {
+  width: 112rpx;
+  height: 112rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.head {
+  display: flex;
+  width: 730rpx;
+  height: 285rpx;
+  box-sizing: border-box;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.app_name {
+  text-align: center;
+}
+
+

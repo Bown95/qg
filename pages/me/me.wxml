@@ -1,0 +1,29 @@
+<view class='container'>
+
+  <view class='flex-column'>
+    <view class='head_image_view'>
+      <image src='/images/me/me_mycard.png' class='head_bg'></image>
+      <view class='head_front'>
+        <image src="{{userInfo.avatarUrl}}" class='head'>
+        </image>
+        <view class='nameouter'>
+          <text class='name' bindtap='showwx_action'>{{userInfo.nickName}}</text>
+          <text wx:if="{{hasbindphone}}" class='userphone'>手机号:{{loginuser.userphone}}</text>
+          <text wx:if="{{showwx}}" class='userwx' bindtap='copy_action'>({{loginuser.userwx}})</text>
+        </view>
+
+      </view>
+    </view>
+
+    <view class='me_list'>
+      <view wx:for="{{namelist}}" wx:for-item="nameitem" wx:key="index" class='item' bindtap='itemclick' data-code='{{nameitem.code}}'>
+      <!-- wx:if="{{(nameitem.code == 3&&!hasbindphone)||nameitem.code != 3}}" -->
+        <image class='left_logo' src='{{nameitem.img}}'></image>
+        <text class='name'>{{nameitem.name}}</text>
+        <image class='goimg' wx:if="{{nameitem.code!=99}}" src='/images/me/me_jian.png'></image>
+      </view>
+    </view>
+
+  </view>
+
+</view>

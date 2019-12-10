@@ -1,0 +1,34 @@
+<view class="bg"></view>
+
+<view class='front'>
+  <view class='head'>
+    <image src='/images/income/head.png'></image>
+    <text class='text1'>{{userxnb/100}}</text>
+    <text class='text2'>成长值</text>
+
+    <view class='tixian' bindtap='tixian_action'>
+      <text>提现</text>
+    </view>
+  </view>
+
+  <view class='list'>
+    <text class='list_title'>我的收益</text>
+
+    <view class='list_item_bg' wx:if="{{hislist.length == 0}}">
+      <image src='/images/nodata_bg.png'></image>
+    </view>
+    <view class='list_item_outer' wx:else>
+      <view class='list_item' wx:for="{{hislist}}" wx:for-item="his" wx:key="{{index}}">
+        <view class='left'>
+          <text class='title'>{{his.czlycomm}}</text>
+          <text class='time'>{{his.time}}</text>
+        </view>
+        <view class='right'>
+          <text>{{his.cztype==1?"+":"-"}}{{his.czhbnum/100}}</text>
+          <image src='/images/income/money.png'></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
